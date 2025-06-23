@@ -1,0 +1,186 @@
+/* Variaveis de cor */
+:root{
+    --botoes-inativo-cor: #00002D;
+    --botoes-ativo-cor: #4149F6;
+    --card-img-cont: #00004B;
+    --botoes-hover: #7379FF;
+    --fundo-cor: #020210;
+    --linhas-cor: #44436A;
+    --text-color: white;
+}
+
+body{
+    background-color: var(--fundo-cor);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Para toda a página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*=================Definindo Header================*/
+.main-header {
+    position: fixed;
+    color: white;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid var(--linhas-cor);
+    background-color: var(--fundo-cor);
+    z-index: 1000;
+}
+
+/*Lista de botões na header*/
+.header-buttons {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.header-buttons button {
+    color: var(--text-color);
+    background-color: var(--botoes-inativo-cor);
+    border: none;
+    height: 50px;
+    width: 180px;
+    clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+    padding: 0;
+    cursor: pointer;
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+
+}    
+
+.header-buttons button:hover {
+    background-color: var(--botoes-hover);
+}
+
+.header-buttons button.active {
+    background-color: var(--botoes-ativo-cor);
+    color: var(--text-color);
+}
+
+/*Definindo Inicio*/
+.itens-pagina {
+    padding-left: 30px;
+    padding-top: 125px;
+    color: white;
+    font-family: 'Marmelad', sans-serif;
+}
+
+.about-me{
+    display: flex;
+    justify-content: space-between;
+    justify-self: center;
+    align-items: center;
+    width: 85%;
+    height: 650px;
+    background-color: var(--botoes-inativo-cor);
+    border-radius: 20px;
+}
+
+.about-me .card-image{
+    width: 412px;
+    align-self: self-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top-left-radius: 20px;
+    padding-top: 50px;
+    padding-bottom: 65px;
+    background-color: var(--card-img-cont);
+}
+
+.about-me .card-image img{
+    width: 315px;
+    height: 315px;
+    border-radius: 50%;
+}
+
+.about-me .card-image .name-div{
+    display: flex;
+    justify-content: center;    
+    width: 80%;
+    margin-top: 20px;
+    border-bottom: 1px solid #443FCB;
+}
+
+.about-me .card-image .name-div .name{
+    font-size: 24px;
+    font-family: 'Koulen', sans-serif;
+}
+
+.about-me .card-image .form{
+    justify-self: center;
+    margin-top: 10px;
+    font-family: 'Kreon', sans-serif;
+    font-size: 20px;
+}
+
+.about-me .text{
+    align-self: self-start;
+    margin-top: 30px;
+    width: 910px;
+    height: 570px;
+    margin-right: 90px;
+    font-family: 'Kreon', sans-serif;
+}
+
+.about-me .text p{
+    font-size: 40px;
+    color: var(--botoes-ativo-cor);
+}
+
+.about-me .text span{
+    font-size: 24px;
+    font-weight: mixed;
+    color: white;
+}
+
+.githubic{
+    width: 60px;
+    height: 60px;
+}
+
+/*Definindo Lista de Projetos*/
+.project-list{
+    margin-top: 25px;;
+    color: var(--text-color);
+}
+
+.project-list li{
+    color: var(--text-color);
+}
+
+.repo-list{
+    color: var(--text-color);
+}
+
+.project-list .titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-size: 18px;
+    width: 200px;
+    height: 85px;
+    margin-bottom: 30px;
+}
+
+.project-list .titulo h3{
+    margin-left: 25px;
+}
+
+#projetos{
+    background-color: var(--botoes-ativo-cor);
+}
