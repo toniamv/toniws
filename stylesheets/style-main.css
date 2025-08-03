@@ -72,17 +72,16 @@ a {
 
 /*Definindo Inicio*/
 .itens-pagina {
-    padding-left: 30px;
+    margin-left: 30px;
     padding-top: 125px;
     color: white;
     font-family: 'Marmelad', sans-serif;
 }
 
 .about-me{
-    display: flex;
+    display: grid;
     justify-content: space-between;
     justify-self: center;
-    gap: 30px;
     align-items: center;
     width: 85%;
     height: 650px;
@@ -90,8 +89,19 @@ a {
     border-radius: 20px;
 }
 
-.about-me .card-image{
+.about-me .gridtop{
+    grid-row: 1;
+    grid-template-columns: 1fr 1fr;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    width: 99%;
+    height: 100%;
+}
+
+.gridtop .card-image{
     width: 412px;
+    height: 100%;
     align-self: self-start;
     display: flex;
     flex-direction: column;
@@ -102,13 +112,13 @@ a {
     background-color: var(--card-img-cont);
 }
 
-.about-me .card-image img{
+.gridtop .card-image #imagem-p{
     width: 250px;
     height: 250px;
     border-radius: 50%;
 }
 
-.about-me .card-image .name-div{
+.gridtop .card-image .name-div{
     display: flex;
     justify-content: center;    
     width: 80%;
@@ -116,36 +126,53 @@ a {
     border-bottom: 1px solid #443FCB;
 }
 
-.about-me .card-image .name-div .name{
+.gridtop .card-image .name-div .name{
     font-size: 24px;
     font-family: 'Koulen', sans-serif;
 }
 
-.about-me .card-image .form{
+.gridtop .card-image .form{
+    width: 200px;
+    text-align: center;
     justify-self: center;
     margin-top: 10px;
     font-family: 'Kreon', sans-serif;
     font-size: 20px;
 }
 
-.about-me .text{
-    align-self: self-start;
+.gridtop .text{
+    align-self: flex-start;
     margin-top: 30px;
     width: 910px;
-    height: 570px;
     margin-right: 90px;
     font-family: 'Kreon', sans-serif;
 }
 
-.about-me .text p{
+.gridtop .text p{
     font-size: 30px;
     color: var(--botoes-ativo-cor);
 }
 
-.about-me .text span{
+.gridtop .text span{
     font-size: 20px;
     font-weight: mixed;
     color: white;
+}
+
+.gridbottom {
+    display: flex;
+    grid-row: 2;
+    justify-content: start;
+    align-items: center;
+    width: 97%;
+    height: 100%;
+    padding-left: 2%;
+}
+
+.icon_list img{
+    width: 100px;
+    height: auto;
+    padding-right: 28px;
 }
 
 .githubic{
@@ -153,17 +180,15 @@ a {
     height: 60px;
 }
 
+.project-list .titulo{
+    border-left: #44436A 1px solid;
+    padding-left: 70px;
+    color: var(--text-color);
+}
+
 /*Definindo Lista de Projetos*/
 .project-list{
-    margin-top: 25px;;
-    color: var(--text-color);
-}
-
-.project-list li{
-    color: var(--text-color);
-}
-
-.repo-list{
+    margin-top: 60px;;
     color: var(--text-color);
 }
 
@@ -182,10 +207,33 @@ a {
     margin-left: 25px;
 }
 
+
+#repo-list{
+    margin-top: 60px;
+    color: var(--text-color);
+}
+
+#repo-list li{
+    width: 75%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 30px;
+    background-color: var(--card-img-cont);
+    border-radius: 10px;
+}
+
+.repo-item{
+    padding: 50px
+}
+
 .p_titulo{
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-size: 25px;
     color: white;
+    padding-bottom: 20px;
 }
 
 .p_descricao{
-    background-color: var(--botoes-ativo-cor);
 }

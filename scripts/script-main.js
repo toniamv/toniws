@@ -6,8 +6,10 @@ document.addEventListener("DOMContentLoaded", function () {
             data.forEach(repo => {
                 const listItem = document.createElement("li");
                 if(repo.name != "toniamv"){
-                    listItem.innerHTML = `<p class="p_titulo">${repo.name}</p>
-                                        <p class = "p_descricao"> ${repo.description} </p>`;
+                    listItem.innerHTML = `<div class="repo-item">
+                                        <p class="p_titulo">${repo.name}</p>
+                                        <p class = "p_descricao"> ${repo.description}</p>
+                                        </div>`;
                     repoList.appendChild(listItem);
                 }
             });
