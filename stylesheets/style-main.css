@@ -82,6 +82,7 @@ a {
     display: flex;
     justify-content: space-between;
     justify-self: center;
+    gap: 30px;
     align-items: center;
     width: 85%;
     height: 650px;
@@ -102,8 +103,8 @@ a {
 }
 
 .about-me .card-image img{
-    width: 315px;
-    height: 315px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
 }
 
@@ -137,12 +138,12 @@ a {
 }
 
 .about-me .text p{
-    font-size: 40px;
+    font-size: 30px;
     color: var(--botoes-ativo-cor);
 }
 
 .about-me .text span{
-    font-size: 24px;
+    font-size: 20px;
     font-weight: mixed;
     color: white;
 }
@@ -181,6 +182,10 @@ a {
     margin-left: 25px;
 }
 
-#projetos{
+.p_titulo{
+    color: white;
+}
+
+.p_descricao{
     background-color: var(--botoes-ativo-cor);
 }
