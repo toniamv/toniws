@@ -15,6 +15,7 @@ body{
 
 a {
     text-decoration: none;
+    color: var(--text-color);
 }
 
 /* Para toda a página */
@@ -83,7 +84,7 @@ a {
     justify-content: space-between;
     justify-self: center;
     align-items: center;
-    width: 85%;
+    width: 90%;
     height: 650px;
     background-color: var(--botoes-inativo-cor);
     border-radius: 20px;
@@ -143,7 +144,7 @@ a {
 .gridtop .text{
     align-self: flex-start;
     margin-top: 30px;
-    width: 910px;
+    width: 870px;
     margin-right: 90px;
     font-family: 'Kreon', sans-serif;
 }
@@ -236,4 +237,45 @@ a {
 }
 
 .p_descricao{
+}
+
+.p_linguagens{
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-size: 20px;
+    color: white;
+    padding-top: 10px;
+}
+
+.main-footer {
+    display: grid;
+    row-gap: 40px;
+    margin-left: 30px;
+    margin-bottom: 60px;
+    padding-top: 30px;
+    padding-left: 30px;
+    width: 70px;
+    border-left:#44436A 1px solid;
+}
+
+.main-footer p {
+    grid-row: 1;
+    color: var(--text-color);
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.linkedcard {
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-size: 18px;
+    grid-row: 2;
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.linkedcard img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
 }

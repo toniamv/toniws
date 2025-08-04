@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     listItem.innerHTML = `<div class="repo-item">
                                         <p class="p_titulo">${repo.name}</p>
                                         <p class = "p_descricao"> ${repo.description}</p>
+                                        <p class = "p_linguagens"> ${repo.languages}</p>
                                         </div>`;
                     repoList.appendChild(listItem);
                 }
